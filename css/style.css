@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+html, body {
+    height: 100vh;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    padding: 0 5vw;
+}
+
+.bars-mobile {
+    z-index: 100;
+    cursor: pointer;
+    position: fixed;
+    top: 5.7rem;
+    right: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.line {
+    height: 2px;
+    width: 100%;
+    box-shadow: 0.1rem 0.1rem 0.1rem #9c9c9c8f;
+    transition: all 0.4s;
+    background: #9c9c9c;
+}
+
+.show-menu #line1 {
+    transform: rotate(45deg) translate(0.05rem, 0.8rem);
+    box-shadow: none;
+}
+.show-menu #line2 {
+    opacity: 0;
+    visibility: hidden;
+}
+.show-menu #line3 {
+    transform: rotate(-45deg) translate(0.2rem, -0.9rem);
+    box-shadow: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo-desktop {
+    margin-right: auto;
+    width: 180px;
+    height: auto;
+}
+
+nav.desktop li {
+    display: inline-block;
+    margin: 0 25px;
+}
+
+nav.desktop a {
+    color: #3e3a39;
+    transition: 0.4s;
+}
+nav.desktop a:hover {
+    color: #9c9c9c;
+}
+
+.btn-header{
+    cursor: pointer;
+    padding: 0.8rem 2rem;
+    box-shadow: 0.2rem 0.4rem 0.3rem #2382e27a;
+    border: 2px solid #2383e2;
+    border-radius: 2rem;
+    font-size: 1rem;
+    color: white;
+    background: #2383e2;
+    transition: 0.4s ease-out;
+}
+.btn-header:hover {
+    color: #2383e2;
+    background: white;
+}
+
+.mobile {
+    display: none;
+}
+
+.logo-mobile {
+    width: 100%;
+    height: auto;
+}
+.logo-mobile img {
+    width: 150px;
+    height: 100%;
+}
+
+.sidebars {
+    display: none;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    right: -40%;
+    width: 40%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ease-out;
+    background: white;
+}
+.menu-item li {
+    margin: 10px 0;
+}
+.menu-link {
+    font-size: 1.2rem;
+    color: #3e3a39;
+    transition: 0.4s;
+}
+.menu-link:hover {
+    color: #9c9c9c;
+}
+
+.show-menu .sidebars {
+    right: 0;
+}
+
+.main {
+    height: 85vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.text-bg {
+    width: 40%;
+}
+.text-bg h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #2383e2;
+}
+.text-bg h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #3e3a39;
+}
+.text-bg p {
+    padding: 1.5rem 0;
+}
+
+.btn-text {
+    cursor: pointer;
+    padding: 0.8rem 2rem;
+    box-shadow: 0.2rem 0.3rem 0.2rem #2382e27a;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1rem;
+    color: white;
+    background: #2383e2;
+    transition: 0.3s ease-out;
+}
+.btn-text:hover {
+    transform: scale(1.1);
+    box-shadow: 0.2rem 0.7rem 0.4rem #2382e27a;
+}
+
+.bg {
+    width: 50%;
+}
+
+.sessao-header {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+.sessao-header h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    color: #3e3a39;
+}
+
+.servicos {
+    display: flex;
+    flex-direction: row;
+    margin: 300px 0;
+}
+
+.card {
+    width: 33.3%;
+    padding: 2rem;
+    margin: 0 1rem;
+    border-radius: 1rem;
+    background: #358adff3;
+}
+
+.card-wrapper {
+    text-align: center;
+}
+.card-wrapper img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+.card-wrapper h1 {
+    font-size: 1.7rem;
+    color: #302d2c;
+}
+.card-wrapper p {
+    margin-top: 10px;
+    color: white;
+}
+
+.contato {
+    width: 100%;
+    max-width: 1100px;
+    padding: 0 2%;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+.row100 {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+}
+.col {
+    position: relative;
+    width: 100%;
+    margin: 2rem 0 1rem;
+}
+.inputbox {
+    position: relative;
+    width: 100%;
+    height: 2.5rem;
+}
+
+input, textarea {
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    box-shadow: none;
+    font-size: 1rem;
+    background: transparent;
+}
+.inputbox.textarea{
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+.inputbox.textarea textarea {
+    resize: none;
+}
+
+.text {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    line-height: 40px;
+    transition: all 0.4s;
+}
+
+input:focus + .text, input:valid + .text {
+    top: -35px;
+    left: -8px;
+}
+textarea:focus + .text, textarea:valid + .text {
+    top: -35px;
+    left: -8px;
+}
+
+.line-form {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 98%;
+    border-radius: 2rem;
+    background: #9c9c9c;
+}
+
+.btn-form {
+    cursor: pointer;
+    width: 100%;
+    border-radius: 2rem;
+    color: white;
+    background: #2383e2;
+}
+
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    padding: 10px 0;
+    margin-top: 100px;
+    background: #2383e2;
+}
+footer p {
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width: 1080px) {
+
+    .mobile, .bars-mobile, .sidebars {
+        display: flex;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+    }
+    .logo-desktop {
+        display: none;
+    }
+    nav.desktop {
+        display: none;
+    }
+    .btn-header {
+        cursor: pointer;
+        padding: 0.6rem 1.5rem;
+        box-shadow: 0.1rem 0.4rem 0.6rem #2382e27a;
+        border: 2px solid #2383e2;
+        border-radius: 2rem;
+        font-size: 0.9rem;
+        color: white;
+        background: #2383e2;
+        transition: 0.4s ease-out;
+    }
+    
+    .main {
+        height: 80vh;
+    }
+    .text-bg {
+        width: 100%;
+        text-align: center;
+    }
+    .bg {
+        display: none;
+     }
+
+    .sessao-header h1 {
+        font-size: 3rem;
+        font-weight: 500;
+    }
+
+    .servicos {
+        display: flex;
+        flex-direction: column;
+        margin: 150px 0;
+    }
+    .card {
+        width: 100%;
+        padding: 2rem;
+        margin: 1rem 0;
+        border-radius: 1rem;
+        background: #358adff3;
+    }
+    .card-wrapper {
+        text-align: center;
+    }
+    .card-wrapper h1 {
+        font-size: 1.5rem;
+        color: #302d2c;
+    }
+    .card-wrapper p {
+        margin-top: 10px;
+        color: white;
+    }
+
+    footer  p {
+        font-size: 0.9rem;
+        text-align: center;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .text-bg h1 {
+        font-size: 2.5rem;
+    }
+    .text-bg h2 {
+        font-size: 2rem;
+    }
+    .text-bg p {
+        font-size: 0.9rem;
+    }
+}

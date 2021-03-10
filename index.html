@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Digitalews</title>
+       ' <meta charset="UTF-08">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Jonatas A. Rocha">
+        <meta name="description" content="Aqui tem uma descrição!">
+        <meta name="keywords" content="Html, Css, jQuery">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/image/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/image/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/image/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="bars-mobile">
+                <div class="line" id="line1"></div>
+                <div class="line" id="line2"></div>
+                <div class="line" id="line3"></div>
+            </div><!--bars-mobile-->
+
+            <header>
+                <div class="logo-desktop">
+                    <img src="/image/logo.png" alt="logo">
+                </div><!--logo-desktop-->
+
+                <nav class="desktop">
+                    <ul>
+                        <li><a href="#">Serviços</a></li>
+                        <li><a href="#">Projetos</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav><!--desktop-->
+
+                <button class="btn-header" type="submit">Contratar</button>
+
+            </header>
+
+            <div class="mobile">
+
+                <div class="logo-mobile">
+                    <img src="/image/logo.png" alt="logo-mobile">
+                </div>
+
+                <aside class="sidebars">    
+                    <nav>
+                        <ul>
+                            <li class="menu-item"><a href="#servicos" class="menu-link">Serviços</a></li>
+                            <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
+                            <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
+                        </ul>
+                    </nav>
+                </aside><!--sidebars-->
+
+            </div><!--mobile-->
+
+            <main class="main">
+                <div class="text-bg">
+                    <h1>Development</h1>
+                    <h2>Team Work</h2>
+                    <p>Site especializado em criar websites, sistemas de gestão e aplicativos.</p>
+                    <button class="btn-text">Contate-nos</button>
+                </div><!--text-bg-->
+
+                <div class="bg">
+                    <img src="/image/bg.jpg" alt="bg">
+                </div><!--bg-->
+
+            </main><!--main-->
+
+            <section class="sessao-servicos">
+                <div class="sessao-header">
+                    <h1>Serviços</h1>
+                </div><!--sessao-header-->
+
+                <div class="servicos">
+                    <div class="card">
+                        <div class="card-wrapper">
+                            <img src="/image/website.png" alt="website">
+                            <h1>Criação de Websites</h1>
+                            <p>Criamos websites básicos e avançados, dependendo dos requisitos do cliente.</p>
+                        </div><!--card-wrapper-->
+                    </div><!--card-->
+
+                    <div class="card">
+                        <div class="card-wrapper">
+                            <img src="/image/system.png" alt="sistema-de-gestão">
+                            <h1>Sistemas de Gestão</h1>
+                            <p>O sistema de gestão é um programa de computador que ajuda a cuidar das atividades da empresa. Ele é um software inteligente que facilita atividades do dia a dia.</p>
+                        </div><!--card-wrapper-->
+                    </div><!--card-->
+
+                    <div class="card">
+                        <div class="card-wrapper">
+                            <img src="/image/smartphone.png" alt="celular">
+                            <h1>Aplicativos</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quos sapiente consequatur officia, quam omnis iusto facere aliquam tempora porro?</p>
+                        </div><!--card-wrapper-->
+                    </div><!--card-->
+                </div><!--servicos-->
+            </section><!--sessao-servicos-->
+
+            <section id="contato" class="sessao-contato">
+                <div class="sessao-header">
+                    <h1>Contato</h1>
+                </div><!--sessao-header-->
+
+                <div class="contato">
+                    <form>
+                        <div class="row100">
+                            <div class="col">
+                                <div class="inputbox">
+                                    <input type="text" required>
+                                    <span class="text">Nome</span>
+                                    <span class="line-form"></span>
+                                </div><!--inputbox-->
+                            </div><!--col-->
+                            <div class="col">
+                                <div class="inputbox">
+                                    <input type="text" required>
+                                    <span class="text">Sobrenome</span>
+                                    <span class="line-form"></span>
+                                </div><!--inputbox-->
+                            </div><!--col-->
+                        </div><!--row100-->
+                        <div class="row100">
+                            <div class="col">
+                                <div class="inputbox">
+                                    <input type="email" required>
+                                    <span class="text">E-mail</span>
+                                    <span class="line-form"></span>
+                                </div><!--inputbox-->
+                            </div><!--col-->
+                            <div class="col">
+                                <div class="inputbox">
+                                    <input type="tel" required>
+                                    <span class="text">Telefone</span>
+                                    <span class="line-form"></span>
+                                </div><!--inputbox-->
+                            </div><!--col-->
+                        </div><!--row100-->
+
+                        <div class="row100">
+                            <div class="col">
+                                <div class="inputbox textarea">
+                                    <textarea required></textarea>
+                                    <span class="text">Duvidas</span>
+                                    <span style="width: 100%;" class="line-form"></span>
+                                </div><!--inputbox-->
+                            </div><!--col-->
+                        </div><!--row100-->
+                        <div class="row100">
+                            <div class="col">
+                                <div class="inputbox">
+                                    <input class="btn-form" type="submit" value="Enviar">
+                                </div><!--inputbox-->
+                            </div><!--col-->
+                        </div><!--row100-->
+                    </form>
+                </div><!--contato-->
+
+            </section><!--sessao-contato-->
+
+        </div><!--container-->
+
+        <footer>
+            <p>® 2021 - Digitalews - Todos os Direitos Reservados</p>
+        </footer>
+    
+        <script src="/Js/script.js"></script>
+
+    </body>
+</html>
